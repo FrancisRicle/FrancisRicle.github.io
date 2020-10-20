@@ -15,8 +15,24 @@ module.exports = {
                 }
             },
             {
-                test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-                use:'url-loader'
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                name: 'src/images/[name].[ext]',
+                            },
+                        },
+                ]            
+            },
+            {
+                test: /\.ttf$/,
+                use:{
+                    loader: 'file-loader',
+                    options:{
+                        name: 'src/fonts/[name].[ext]',
+                    }
+                }
             },
             {
                 test: /\.css$/,
@@ -31,7 +47,7 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options:{
-                            importLoader: 1,
+                            importLoaders: 1,
                             modules: {
                                 localIdentName: '[name]__[local]--[hash:base64:5]'
                             }

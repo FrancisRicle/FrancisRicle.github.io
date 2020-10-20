@@ -1,0 +1,5 @@
+.profile{
+    clip-path: circle();
+    transform: scale(0.2);
+}
+

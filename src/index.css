@@ -1,0 +1,7 @@
+@font-face{
+    font-family: "Commissioner";
+    src: url("fonts/Commissioner/Commissioner-VariableFont_wght.ttf")
+}
+body{
+   font-family: "Commissioner"; 
+}
