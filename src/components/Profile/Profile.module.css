@@ -1,5 +1,46 @@
 .profile{
-    clip-path: circle();
-    transform: scale(0.2);
+    
 }
-
+.banner{
+    width: 100%;
+    position: absolute;
+}
+.certificates img{
+    width: 100%;
+}
+.profile_photo{
+    width: 20%;
+    position: relative;
+    margin-top: 20%;
+}
+.more{
+    display: flex;
+    text-align: center;
+}
+.more img{
+    width: 100%;
+}
+.links{
+    color: black;
+    text-decoration: none;
+}
+@media screen and (min-width: 1080px){
+    .profile{
+        padding: 0 20%;
+    }
+    .banner{
+        max-width: 60%;
+        max-height: 60%;
+        left: 20%;
+    }
+}
+@media screen and (min-width: 1920px){
+    .profile{
+        padding: 0 30%;
+    }
+    .banner{
+        max-width: 40%;
+        max-height: 40%;
+        left: 30%;
+    }
+}
