@@ -12,7 +12,8 @@ export default function Nav(){
         html2canvas(input,{useCORS: true})
           .then((canvas) => {
                 const pdf = new jsPDF();
-                pdf.addImage(canvas.toDataURL(), 'PNG', 0, 0);
+                console.log(canvas)
+                pdf.addImage(canvas, 'JPEG', 0, 0, canvas.width, canvas.height);
                 pdf.save("CV_FrancisRicle.pdf");
             })
             .catch(err => console.log(err))
