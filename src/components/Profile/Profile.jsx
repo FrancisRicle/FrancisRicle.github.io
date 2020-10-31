@@ -17,12 +17,10 @@ export default function Profile(){
                 <img src={henry} alt=""/>
             </div>
             <div className={Styles.more}>
-                <Link to="/cv" className={Styles.links}>
-                   <h1>CV</h1>
+                <Link to="/cv">
                     <img src={cv}/>
                 </Link>
-                <Link to="/projects" className={Styles.links}>
-                   <h1>Proyectos</h1>
+                <Link to="/projects">
                     <img src={briefcase}/>
                 </Link>
             </div>

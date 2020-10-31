@@ -6,6 +6,8 @@ body{
    font-family: "Commissioner"; 
    background-color:azure;
    font-weight: 200;
+   padding: 0;
+   margin: 0;
 }
 h1{
     font-weight: 450;
