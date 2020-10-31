@@ -20,12 +20,6 @@ export default function CV(){
         "#studies": studies,
         "#skills": skills,
     }
-    useEffect(() =>{
-        window.addEventListener('scroll', () => {
-            if(!!hashRoute[location.hash])console.log(hashRoute[location.hash].current.offsetTop)
-            console.log(Math.ceil(window.scrollY))
-        });
-    },[])
     useEffect(()=>{
         if(!!hashRoute[location.hash])hashRoute[location.hash].current.scrollIntoView();
     },[location]);
