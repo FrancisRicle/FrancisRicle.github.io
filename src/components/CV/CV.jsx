@@ -109,7 +109,6 @@ export default function CV(){
                     </div>
                 </div>
             </div> 
-            <canvas crossorigin="anonymous" id="cv_francis_ricle"></canvas>
         </div>
     );
 }

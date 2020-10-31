@@ -9,9 +9,11 @@ export default function Nav(){
     const download = () => {
         
         const input = document.querySelector('.CV-module__cv_body--3Hty9');
-        html2canvas(input,{useCORS: true, canvas:document.querySelector("#cv_francis_ricle")})
+        html2canvas(input,{useCORS: true})
           .then((canvas) => {
-                console.log(canvas.toDataURL())
+                const pdf = new jsPDF();
+                pdf.addImage(canvas.toDataURL(), 'PNG', 0, 0);
+                pdf.save("CV_FrancisRicle.pdf");
             })
             .catch(err => console.log(err))
     }
