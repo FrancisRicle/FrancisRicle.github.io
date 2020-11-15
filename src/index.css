@@ -1,13 +1,19 @@
 @font-face{
-    font-family: "Commissioner";
-    src: url("../fonts/Commissioner-VariableFont_wght.ttf")
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Thin.ttf")
+}
+
+@font-face{
+    font-family: "Roboto-Bold";
+    src: url("./fonts/Roboto-Bold.ttf")
 }
 body{
-   font-family: "Commissioner"; 
-   background-color:azure;
+   font-family: "Roboto"; 
    font-weight: 200;
    padding: 0;
    margin: 0;
+   background-color: #971016;
+   color: white;
 }
 h1{
     font-weight: 450;

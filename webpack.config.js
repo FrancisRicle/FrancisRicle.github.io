@@ -26,11 +26,12 @@ module.exports = {
                 ]            
             },
             {
-                test: /\.ttf$/,
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use:{
                     loader: 'file-loader',
                     options:{
-                        name: 'src/fonts/[name].[ext]',
+                        name: '[name].[ext]',
+			outputPath: 'fonts/'
                     }
                 }
             },
@@ -60,5 +61,5 @@ module.exports = {
     output:{
         path: __dirname,
         filename: "bundle.js"
-    }
+    },
 }
