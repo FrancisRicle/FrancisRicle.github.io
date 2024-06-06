@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Input from '../components/Input.tsx'
+import Output from '../components/Output.tsx'
+import type {Input as InputStr} from '../types/input.ts'
+import { signal } from "@preact/signals"
+import {createRef} from "preact"
+const left = signal("");
+const cursor = signal("");
+const right = signal("");
+const url = signal("/")
+const output = signal(null)
+---
+
+<Layout title="Francis Ricle">
+  State ::= Student | Programmer | Chef
+  <Output output={output} command={url} client:load/>
+  <Input output={output} left={left} cursor={cursor} right={right} command={url}  client:load/>
+</Layout>
